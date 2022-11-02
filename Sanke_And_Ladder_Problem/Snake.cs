@@ -14,7 +14,8 @@ namespace Sanke_And_Ladder_Problem
         public void player()
         {
             int position1 = 0;
-
+            int count=0;
+            
             Random random = new Random();
             while (position1 != 100)
             {
@@ -55,7 +56,9 @@ namespace Sanke_And_Ladder_Problem
                     Console.WriteLine("Player 1st Wins the Game");
                     break;
                 }
+               count++;
             }
+            Console.WriteLine("Number Of Times Die Win :"+ count);
         }
     }
 }
