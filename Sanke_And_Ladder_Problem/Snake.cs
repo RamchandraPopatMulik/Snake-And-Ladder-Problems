@@ -23,22 +23,20 @@ namespace Sanke_And_Ladder_Problem
             switch(StepCheck)
             {
                 case Ahead_Move:
-                    if(position < 100)
-                    {
-                        position = position + StepCheck;    
+                   
+                        position = position + MovingCheck;    
                         Console.WriteLine("Ahead Move");
-                    }
+                    
                 break;
                 case Behind_Move:
-                    if (position > 0)
-                    {
-                        position = position - StepCheck;
+                   
+                        position = position - MovingCheck;
                         Console.WriteLine("Behind Move");
-                    }
+                    
                     break;
                 case No_Move:
                    
-                        position = position + StepCheck;
+                        position = position + MovingCheck;
                         Console.WriteLine("No Move");
 
                 break;
